@@ -106,9 +106,9 @@ describe("War", () => {
         expect(war.saxonArmy.length).toEqual(0);
       });
 
-    //   test("should return result of calling receiveDamage() of a Saxon with the strength of a Viking", () => {
-    //     expect(war.vikingAttack()).toEqual("A Saxon has died in combat");
-    //   });
+      test("should return result of calling receiveDamage() of a Saxon with the strength of a Viking", () => {
+        expect(war.vikingAttack()).toEqual("A Saxon has died in combat");
+      });
     });
 
     describe("saxonAttack() method", () => {

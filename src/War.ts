@@ -18,13 +18,19 @@ export class War {
   vikingAttack() {
     const randomSaxonIndex = Math.floor(Math.random()* this.saxonArmy.length)
     const randomVikingIndex = Math.floor(Math.random()* this.vikingArmy.length)
-    this.saxonArmy[randomSaxonIndex].receiveDamage(this.vikingArmy[randomVikingIndex].strength)
+    let result = this.saxonArmy[randomSaxonIndex].receiveDamage(this.vikingArmy[randomVikingIndex].strength)
     
     if (this.saxonArmy[randomSaxonIndex].health <= 0)
         this.saxonArmy.splice(randomSaxonIndex, 1)
+   return result
 }
 
-  saxonAttack() {}
+  saxonAttack() {
+    // const randomSaxonIndex = Math.floor(Math.random()* this.saxonArmy.length)
+  }
+
+
+
 
   showStatus() {}
 }
